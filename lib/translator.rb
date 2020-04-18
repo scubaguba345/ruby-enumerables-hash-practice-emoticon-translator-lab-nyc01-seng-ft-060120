@@ -17,7 +17,7 @@ def get_japanese_emoticon(file_path, americanemoji)
   americanemoji = new_library.keys.find do |key|
     new_library[key][:english] == americanemoji
 end
-americanemoji ? new_library[americanemoji][:japanese] : "SOrry, that emoticon was not found"
+americanemoji ? new_library[americanemoji][:japanese] : "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning
