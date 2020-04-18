@@ -25,5 +25,5 @@ def get_english_meaning(file_path, japanseemoji)
   japanseemoji = library.keys.find do |key|
     library[key][:japanese] == japanseemoji
 end
-japanseemoji ? library[japanseemoji][:english] : "Sorry, that emoticon was not found"
+japanseemoji ? japanseemoji : "Sorry, that emoticon was not found"
 end
